@@ -34,7 +34,6 @@ export const ConnectButton = function ({ className }) {
     if (connector) {
       connector.activate().then((res) => {
         connector.getProvider().then((res) => {
-          console.log(res.id);
         });
         setProvider(res.provider);
       });
@@ -73,7 +72,6 @@ export const ConnectButton = function ({ className }) {
       // let { provider } = await connector.activate();
       // signer
       // let web3 = new Web3(provider);
-      console.log(provider);
       const LearnContract = new web3.eth.Contract(
         CONTRACT_ABI,
         CONTRACT_ADDRESS,

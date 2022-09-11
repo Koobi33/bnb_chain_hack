@@ -11,14 +11,14 @@ export const courses = [
       "Wanna become dark loard but don’t have enough resourses? Check this course...",
     difficulty: 4,
     value: 50,
-    img: IMG_URL,
+    img: '/1.png',
   },
   {
     difficulty: 2,
     id: "0",
     title: "Lightsaber mastery",
     description: "Watch this course and earn new skills",
-    img: IMG_URL,
+    img: '/2.png',
     value: 15,
   },
   {
@@ -27,9 +27,19 @@ export const courses = [
     title: "Future crypto economy",
     description:
       "Learn ideas, methods, and institutions that permit crypto human society to manage risks",
-    img: IMG_URL,
+    img: '/3.png',
     value: 20,
   },
+  {
+    difficulty: 2,
+    id: "3",
+    title: "How to incentivize your jedi",
+    description:
+      "Human resources in Jedi Order. Their values and philosophy",
+    img: '/1.png',
+    value: 20,
+  },
+
 ];
 
 export const injected = new InjectedConnector({

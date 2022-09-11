@@ -13,7 +13,7 @@ const CoursesList = function ({ courses }) {
           description={item.description}
           difficulty={item.difficulty}
           value={item.value}
-          img={IMG_URL}
+          img={item.img}
         />
       ))}
     </div>

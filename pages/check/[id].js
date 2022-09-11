@@ -29,11 +29,11 @@ function EvaluationPage() {
       <div className={styles.content}>
         <h1 className={styles.title}>Evaluating: {courses[0].title}</h1>
         <div style={{ width: "100%" }}>
-          <h3 className={styles.submit_title}>Your peer submitted data:</h3>
+          <h3 className={styles.submit_title}>Your peer submitted answer on question "What color of light saber real Jedy use?": </h3>
           <div className={styles.submit_container}>{usersSubmission}</div>
         </div>
         <div className={styles.checklist}>
-          {[{ id: 0, title: "Does your peer has been rickrolled?" }].map(
+          {[{ id: 0, title: "Was the answer accurate?" }].map(
             (item, index) => (
               <div className={styles.checklist_item} key={item.id}>
                 <h3 className={styles.checklist_title}>{item.title}</h3>

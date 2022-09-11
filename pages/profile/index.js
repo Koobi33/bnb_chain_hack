@@ -13,7 +13,7 @@ function Profile() {
         <div className={styles.profile_card}>
           <img
             alt={"avatar"}
-            src={PROFILE_AVATAR_URL}
+            src={'/1.png'}
             className={styles.avatar}
           />
           <div className={styles.profile_info}>
@@ -26,7 +26,7 @@ function Profile() {
               type="circle"
               percent={50}
             />
-            <h3 className={styles.title}>My level: 0</h3>
+              <h3 className={styles.title}>My level: <span style={{color: 'white'}}>0</span></h3>
             <h3 className={styles.title}>
               My balance: <span style={{ color: "gold" }}>50 coins</span>
             </h3>
@@ -42,7 +42,7 @@ function Profile() {
               renderItem={(item) => (
                 <List.Item>
                   <List.Item.Meta
-                    avatar={<Avatar src={IMG_URL} />}
+                    avatar={<Avatar src={item.img} />}
                     title={<span style={{ color: "white" }}>{item.title}</span>}
                     description={"Waiting for evaluation"}
                   />
@@ -56,11 +56,11 @@ function Profile() {
               className={styles.list}
               itemLayout="horizontal"
               size="large"
-              dataSource={Array(4).fill(courses[0])}
+              dataSource={courses}
               renderItem={(item) => (
                 <List.Item>
                   <List.Item.Meta
-                    avatar={<Avatar src={IMG_URL} />}
+                    avatar={<Avatar src={item.img} />}
                     title={
                       <a href={`/check/${item.id}`} style={{ color: "white" }}>
                         {item.title}
@@ -69,7 +69,7 @@ function Profile() {
                     description={"Evaluate your peers and earn"}
                   />
 
-                  <span style={{ color: "gold" }}>+50 coins</span>
+                  <span style={{ color: "gold" }}>+20 coins</span>
                 </List.Item>
               )}
             />

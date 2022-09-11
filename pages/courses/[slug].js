@@ -10,7 +10,7 @@ import {
   courses,
   IMG_URL,
 } from "../../constants";
-import { notification, Rate } from "antd";
+import {Input, notification, Rate} from "antd";
 
 const INFO_STATE = "INFO_STATE";
 const LEARN_STATE = "LEARN_STATE";
@@ -114,7 +114,7 @@ const CourseMaterials = function ({ setCourseState, currCourse }) {
       <iframe
         width="100%"
         height="450px"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        src="https://www.youtube.com/embed/bfmKtxZiB6I"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -159,8 +159,8 @@ const CourseForm = function ({ currCourse }) {
           }}
         >
           <h1 className={styles.title}>SUBMISSION FOR: {currCourse.title}</h1>
-          <p style={{ color: "white" }}>Describe what you have learned?</p>
-          <textarea
+          <p style={{ color: "white" }}>What color of light saber real Jedy use?</p>
+          <Input
             value={text}
             onChange={(e) => {
               setText(e.target.value);
