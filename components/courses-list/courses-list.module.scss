@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  padding: 5px;
+
+  & > :first-child {
+    border-top-left-radius: 0;
+    & > img {
+      border-top-left-radius: 0;
+    }
+  }
+  & > :last-child {
+    border-bottom-right-radius: 0;
+    & > img {
+      border-bottom-right-radius: 0;
+
+    }
+  }
+}
